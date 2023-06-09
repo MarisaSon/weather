@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto-Light.woff');
+  src: url('/fonts/Roboto-Light.woff'),
+  url('/fonts/Roboto-Bold.woff');
   font-display: swap;
 }
 
@@ -46,6 +47,7 @@ body {
 #city{
     color: #fff;
     font-size: 45px;
+    font-weight: bold;
 }
 #date{
     color: #fff;
@@ -62,17 +64,21 @@ body {
     color: #fff;
     text-shadow: 5px 10px black;
     margin: 0;
+    font-weight: bold;
 }
 #feel{
     color: #fff;
     font-size: 30px;
+    font-weight: bold;
 }
 #type{
     color: #fff;
     font-size: 32px;
     font-style: italic;
+    font-weight: bold;
 }
 #min-max{
     color: #fff;
     font-size: 26px;
+    font-weight: bold;
 }
