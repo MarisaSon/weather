@@ -3,5 +3,6 @@
 Проект позволяет узнать погоду на текущий день в стране или городе по запросу пользователя. Приложение написано на __JavaScript__ в VS Code.
 
 ![Фото]( /image/pic_1.png)
-[ссылка в vercel] (https://weather-chi-lyart.vercel.app/)
+
+[Cсылка в vercel](https://weather-chi-lyart.vercel.app/)
 
