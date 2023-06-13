@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Light.woff'),
+  url('/fonts/Roboto-Bold.woff');
+  font-display: swap;
+}
+
 body {
   background-image: url("/image/pic_2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
 }
+
 
 .box {
   display: flex;
@@ -12,6 +20,7 @@ body {
   background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6));
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
+  
 }
 .head {
   display: flex;
@@ -52,10 +61,10 @@ body {
 }
 #temperature{
     font-size: 110px;
-    font-weight: bold;
     color: #fff;
     text-shadow: 5px 10px black;
     margin: 0;
+    font-weight: bold;
 }
 #feel{
     color: #fff;
@@ -65,8 +74,8 @@ body {
 #type{
     color: #fff;
     font-size: 32px;
-    font-weight: bold;
     font-style: italic;
+    font-weight: bold;
 }
 #min-max{
     color: #fff;
