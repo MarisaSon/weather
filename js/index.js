@@ -36,22 +36,43 @@ function showResult(result) {
   let type = document.querySelector("#type");
   type.textContent = `${result.weather[0].main}`;
   let minmax = document.querySelector("#min-max");
-  minmax.innerHTML = `Min: ${Math.round(result.main.temp_min)}<span>°</span> Max: ${Math.round(result.main.temp_max)}<span>°</span`;
+  minmax.innerHTML = `Min: ${Math.round(
+    result.main.temp_min
+  )}<span>°</span> Max: ${Math.round(result.main.temp_max)}<span>°</span`;
 }
 
-
-function getOurDate(){
-  let date=document.querySelector('#date');
-  const now=new Date();
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const day=days[now.getDay()];
-  const dayNumber=now.getDate();
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const month=months[now.getMonth()];
+function getOurDate() {
+  let date = document.querySelector("#date");
+  const now = new Date();
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const day = days[now.getDay()];
+  console.log(days);
+  const dayNumber = now.getDate();
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const month = months[now.getMonth()];
   const year = now.getFullYear();
-  const fullDate = day + " " + dayNumber + ' ' + month + " " + year;
+  const fullDate = `${day} ${dayNumber}  ${month} ${year}`
   
-  date.textContent=fullDate;
+  date.innerHTML = fullDate;
 }
-
-
